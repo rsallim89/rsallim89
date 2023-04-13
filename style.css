@@ -1,0 +1,302 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  margin: 0
+  padding 0;
+  box-sizing:border-box
+  
+}
+body {
+  background: grey;
+  background-image: url('pageprime\ sem\ o\ menu.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  border-radius: 25px;
+  box-shadow: -5px 5px rgba(0, 0, 0, 0.5);
+}
+  
+  
+
+.submit {
+  border-radius: 4px;
+  align-content: center;
+  display: block;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  
+  
+}
+#formulariologin input.email, #formulariologin input.senha {
+  margin: 10px;
+  
+}
+
+header {
+  top: 0px;
+  border-bottom:solid 1px black;
+  background-color: white;
+  color: black;
+  margin: 0px;
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  text-align: center;
+  background-image: url('LOGO_SOMAR.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+
+#menu {
+  z-index: 100;
+  
+}
+
+#linhamenu {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.linha {
+  height: 5px;
+  width: 100%;
+  background-color:#5eb039 ;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#linha1 {
+  transform: translateY(-4px);
+}
+
+#linha3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 22px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.fundomenu, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.fundomenu {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #5eb039, #5eb039);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .linha {
+  background-color: white;
+}
+
+.change #linha1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #linha2 {
+  opacity: 0;
+}
+
+.change #linha3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%,-30%);
+  }
+.recuperar {
+  margin: 22px;
+  text-align: center;
+  
+}
+h1 {
+  position: relative;
+  top: 100px;
+  left: 150px;
+}
+.textosobre {
+  position: relative;
+  top: 150px;
+  left: 20px;
+  max-width: 90%;
+}
+.container2 {
+  background-color: rgba(13, 77, 138, 0.2);
+  max-width: 100%;
+  height: 600px;
+  max-height: 1200px;
+  margin-left: 100px;
+  border-radius: 5px;
+}
+.imagemlink img {
+  height: 85px;
+  width: 85px;
+}
+.imagemlink {
+  width: 700px;
+  margin-top: 350px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.imagemlink #linkimagem {
+  height: 85px;
+  width: 85px;
+  margin-bottom: 4px;
+}
+.container {
+  max-width: 1250px;
+}
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+#card2 {
+ left: 20px;
+ top: 100px;
+}
+#botaodevoltar {
+background-color: #5eb039;
+}
+.imagemteste {
+  margin: 100px;
+  padding: 20px;
+  margin-left: 25px;
+  width: 700px;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: -5px 5px rgba(0, 0, 0, 0.5);
+}
+.linkodd:hover {
+  display: block;
+  transform: scale(1.1);
+}
+#botaologin {
+  background-color:#5eb039 ;
+  border-color: black;
+  border: 1px;
+}
